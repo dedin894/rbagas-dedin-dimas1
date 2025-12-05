@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NigPot+</title>
+    <link rel="stylesheet" href="css/sss.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <img src="assets/apot.jpeg" alt="Logo UT" class="logo">
+                <h1>NigApotek+</h1>
+            </div>
+            <div class="header-right">
+                <span id="greeting" class="greeting"></span>
+                <button id="logoutBtn" class="btn-secondary">Keluar</button>
+            </div>
+        </header>
+
+        <nav class="dashboard-nav">
+            <ul>
+                <li><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+                <li><a href="stok.html" class="nav-link">Stock Obat+</a></li>
+                <li><a href="tracking.html" class="nav-link">Tracking Pengiriman Obat</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Laporan</a>
+                    <div class="dropdown-content">
+                        <a href="laporan.html">Rekap Obat+</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <main class="dashboard-main">
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Stock Obat</h3>
+                    <img src="assets/oabt1.jpeg" alt="Stock Icon" class="card-gambar">
+                    <p>Kelola dan lihat Stock Obat</p>
+                    <a href="stok.html" class="btn-primary">Lihat</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Tracking Pengiriman</h3>
+                    <img src="assets/rir.jpg" alt="Tracking Icon" class="card-gambar">
+                    <p>Lacak status pengiriman Obat</p>
+                    <a href="tracking.html" class="btn-primary">Lacak</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Laporan</h3>
+                    <img src="assets/por.jpg" alt="Laporan Icon" class="card-gambar">
+                    <p>Monitoring progress dan rekap penjualan Obat</p>
+                    <a href="laporan.html" class="btn-primary">Lihat</a>
+                </div>
+                
+                
+            </div>
+        </main>
+    </div>
+
+    <script src="js/sc.js"></script>
+</body>
+</html>

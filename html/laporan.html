@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NigPot+</title>
+    <link rel="stylesheet" href="css/sss.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <img src="assets/apot.jpeg" alt="Logo UT" class="logo">
+                <h1>NigApotek+</h1>
+            </div>
+            <div class="header-right">
+                <span id="greeting" class="greeting"></span>
+                <button id="logoutBtn" class="btn-secondary">Keluar</button>
+            </div>
+        </header>
+
+        <nav class="dashboard-nav">
+            <ul>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="stok.html" class="nav-link">Stock Obat+</a></li>
+                <li><a href="tracking.html" class="nav-link">Tracking Pengiriman Obat</a></li>
+                <li class="dropdown">
+                    <a href="laporan.html" class="nav-link active">Laporan</a>
+                    <div class="dropdown-content">
+                        <a href="laporan.html">Rekap Obat+</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <main class="stok-main">
+            <div class="stok-header">
+                <h2>Laporan Stock Obat</h2>
+                <button id="addStockBtn" class="btn-primary">Tambah Laporan</button>
+            </div>
+
+            <table id="stockTable" class="stock-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Obat</th>
+                        <th>Jenis</th>
+                        <th>Jumlah Terjual</th>
+                        <th>Harga Satuan</th>
+                        <th>Total Penjualan</th>
+                    
+                    </tr>
+                </thead>
+                <tbody id="stockTableBody">
+                    <!-- Data akan diisi oleh JavaScript -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <!-- Modal Tambah Stok -->
+    <div id="addStockModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tambah Laporan Baru</h2>
+            <form id="addStockForm">
+                <div class="form-group">
+                    <label for="kodeBahan">No</label>
+                    <input type="text" id="kodeBahan" name="kodeBahan" required>
+                </div>
+                <div class="form-group">
+                    <label for="namaBahan">Nama Obat</label>
+                    <input type="text" id="namaBahan" name="namaBahan" required>
+                </div>
+                <div class="form-group">
+                    <label for="stok">Jenis</label>
+                    <input type="text" id="stok" name="stok" required>
+                </div>
+                <div class="form-group">
+                    <label for="status">Jumlah Terjual</label>
+                    <input type="text" id="status" name="status" required>
+                </div>
+                <div class="form-group">
+                    <label for="hargaSatuan">Harga Satuan</label>
+                    <input type="text" id="hargaSatuan" name="hargaSatuan" required>
+                </div>
+
+                <button type="submit" class="btn-primary">Simpan</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/laporann.js"></script>
+</body>
+
+</html>
